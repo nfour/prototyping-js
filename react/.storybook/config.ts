@@ -2,5 +2,5 @@
 import { configure } from '@storybook/react';
 
 configure(async () => {
-  await import('../statelessComponents');
+  await import('../src/stories');
 }, module);
