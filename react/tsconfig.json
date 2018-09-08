@@ -5,7 +5,7 @@
     "jsx": "react",
     "strict": true,
     "moduleResolution": "node",
-    "outDir":"build/ts",
+    "noEmit": true,
     "sourceMap": true,
     "resolveJsonModule": true,
     "lib": [

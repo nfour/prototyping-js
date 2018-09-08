@@ -1,5 +1,4 @@
 import * as HtmlWebpackPlugin from 'html-webpack-plugin';
-import * as MonacoWebpackPlugin from 'monaco-editor-webpack-plugin';
 import * as webpack from 'webpack';
 import * as pkgJson from './package.json';
 
@@ -14,13 +13,11 @@ const hotLoader = {
 export const config = <webpack.Configuration> {
   context: `${__dirname}/src/composition`,
   output: {
-    path: `${__dirname}/build/webpack`,
+    path: `${__dirname}/build`,
     publicPath: '/',
-    filename: '[name].[chunkhash].js',
+    filename: '[name].js',
   },
   plugins: [
-    new MonacoWebpackPlugin(),
-
     new HtmlWebpackPlugin({
       title: pkgJson.name,
       filename: 'index.html',
@@ -49,13 +46,6 @@ export const config = <webpack.Configuration> {
         ],
         exclude: /node_modules/,
       },
-
-      // // JSON
-      // {
-      //   test: /(\.json)$/,
-      //   loaders: [hotLoader, 'json-loader'],
-      //   exclude: /node_modules/,
-      // },
 
       // CSS
       {
