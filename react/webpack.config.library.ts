@@ -1,5 +1,5 @@
 import * as webpack from 'webpack';
-import baseConfig from './webpack.config';
+import baseConfig from './.storybook/webpack.config';
 
 const config = <webpack.Configuration> {
   ...baseConfig,

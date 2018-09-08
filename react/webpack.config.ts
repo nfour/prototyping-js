@@ -10,8 +10,9 @@ const hotLoader = {
   },
 };
 
-export const config = <webpack.Configuration> {
-  context: `${__dirname}/src/composition`,
+// tslint:disable-next-line:no-default-export
+export default <webpack.Configuration> {
+  context: __dirname,
   output: {
     path: `${__dirname}/build`,
     publicPath: '/',
@@ -22,10 +23,6 @@ export const config = <webpack.Configuration> {
       title: pkgJson.name,
       filename: 'index.html',
       template: './index.html',
-    }),
-
-    new webpack.DefinePlugin({
-      'process.env': { NODE_ENV: JSON.stringify(process.env.NODE_ENV) },
     }),
   ],
   resolve: { extensions: ['.js', '.tsx', '.ts', '.json'] },
@@ -39,30 +36,20 @@ export const config = <webpack.Configuration> {
           hotLoader,
           {
             loader: 'awesome-typescript-loader',
-            options: {
-              useCache: true,
-            },
+            options: { useCache: true },
           },
         ],
         exclude: /node_modules/,
       },
 
       // CSS
-      {
-        test: /\.css$/,
-        loader: ['style-loader', 'css-loader'],
-      },
+      { test: /\.css$/, loader: ['style-loader', 'css-loader'] },
 
       // ASSETS
       {
         test: /\.(png|jpg|gif|woff|woff2|eot|svg)$/,
-        use: [
-          { loader: 'url-loader', options: { limit: 8192 } },
-        ],
+        use: [{ loader: 'url-loader', options: { limit: 8192 } }],
       },
     ],
   },
 };
-
-// tslint:disable-next-line:no-default-export
-export default config;
