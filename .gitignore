@@ -1,0 +1,9 @@
+/npm-*
+/build
+/.nyc_output
+/.coverage
+
+.directory
+.vscode
+node_modules
+.awcache

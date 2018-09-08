@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "tslint-config-temando",
+    "tslint-react"
+  ],
+  "rules": {
+    "max-classes-per-file": [false],
+    "object-literal-key-quotes": [false],
+    "jsx-wrap-multiline": [false],
+
+    "jsx-alignment": true,
+    "jsx-no-bind": true,
+    "jsx-no-lambda": false,
+    "jsx-no-multiline-js": false,
+    "jsx-boolean-value": false,
+
+    "no-use-before-declare": false,
+
+    "no-default-export": true,
+    "no-implicit-dependencies": [true, "dev"]
+  },
+  "linterOptions": {
+    "exclude": "**/*.json"
+  }
+}
