@@ -6,5 +6,3 @@ storiesOf('Foo', module)
   .add('with text', () => (
     <span>1</span>
   ));
-
-export const a = 1;

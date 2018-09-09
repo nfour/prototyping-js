@@ -1044,6 +1044,10 @@
     "@types/events" "*"
     "@types/node" "*"
 
+"@types/lodash@^4.14.116":
+  version "4.14.116"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.116.tgz#5ccf215653e3e8c786a58390751033a9adca0eb9"
+
 "@types/mime@*":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.0.tgz#5a7306e367c539b9f6543499de8dd519fac37a8b"
@@ -5425,6 +5429,10 @@ react-error-overlay@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.1.tgz#417addb0814a90f3a7082eacba7cee588d00da89"
 
+react-functional-lifecycle@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-functional-lifecycle/-/react-functional-lifecycle-3.0.0.tgz#06c0bc9b6fd30c00e418f115bd05c9e8dfbdc907"
+
 react-fuzzy@^0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/react-fuzzy/-/react-fuzzy-0.5.2.tgz#fc13bf6f0b785e5fefe908724efebec4935eaefe"
@@ -5464,10 +5472,6 @@ react-modal@^3.5.1:
     prop-types "^15.5.10"
     react-lifecycles-compat "^3.0.0"
     warning "^3.0.0"
-
-react-pure-lifecycle@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/react-pure-lifecycle/-/react-pure-lifecycle-3.0.0.tgz#8077c7294904c7f85124a976c09ddec96bc119aa"
 
 react-split-pane@^0.1.82:
   version "0.1.82"
