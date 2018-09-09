@@ -4,7 +4,7 @@ export interface IProps { text: string; }
 
 export const StatelessComponent: React.SFC<IProps> = ({ text }) =>
   <div>
-    {text}
+    <h2>{text}</h2>
   </div>;
 
 export const StatelessComponentStyle2: React.SFC<IProps> = ({ text }) => {
