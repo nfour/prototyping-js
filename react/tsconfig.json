@@ -14,5 +14,8 @@
       "dom"
     ],
     "noUnusedLocals": true,
-  }
+  },
+  "exclude": [
+    "fuckoff"
+  ]
 }

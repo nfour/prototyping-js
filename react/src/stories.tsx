@@ -4,7 +4,7 @@ import * as React from 'react';
 
 storiesOf('Foo', module)
   .add('with text', () => (
-    <span>aasdasdas</span>
+    <span>1</span>
   ));
 
 export const a = 1;

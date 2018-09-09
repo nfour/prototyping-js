@@ -1,6 +1,5 @@
 
-// tslint:disable-next-line:no-default-export
-export default (baseConfig: any, foo: any, config: any) => {
+module.exports = (baseConfig, foo, config) => {
   return {
     ...config,
     ...{
@@ -13,7 +12,7 @@ export default (baseConfig: any, foo: any, config: any) => {
             test: /(\.tsx)$/,
             loaders: [
               {
-                loader: 'awesome-typescript-loader',
+                loader: require.resolve('awesome-typescript-loader'),
                 options: { useCache: true },
               },
             ],
