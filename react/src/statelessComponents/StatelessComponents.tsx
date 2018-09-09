@@ -8,7 +8,7 @@ export const StatelessComponent: React.SFC<IProps> = ({ text }) =>
   </div>;
 
 export const StatelessComponentStyle2: React.SFC<IProps> = ({ text }) => {
-  const content = <div>Wew</div>;
+  const content = <div>{text}</div>;
 
   return content;
 };

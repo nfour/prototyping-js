@@ -18,6 +18,11 @@ module.exports = (baseConfig, foo, config) => {
             ],
             exclude: /node_modules/,
           },
+          {
+            test: /stories\.tsx?$/,
+            loader: require.resolve('@storybook/addon-storysource/loader'),
+            enforce: 'pre',
+          },
         ],
       },
     },
