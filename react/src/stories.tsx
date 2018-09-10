@@ -27,7 +27,6 @@ const ButtonContainer: React.SFC = ({ children }) => <div>{children}</div>;
 const ContentContainer: React.SFC = ({ children }) => <div>{children}</div>;
 
 storiesOf('React State', module)
-  .addDecorator(withKnobs)
   .add('Tabs', () =>
     <Tabs
       ButtonContainer={ButtonContainer}
