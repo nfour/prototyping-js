@@ -15,7 +15,7 @@ export interface IProps {
 export class Tabs extends React.Component<IProps, IState> {
   state = { active: undefined };
 
-  set (active: IState['active']) {
+  setTab (active: IState['active']) {
     this.setState({ active });
   }
 
@@ -28,7 +28,7 @@ export class Tabs extends React.Component<IProps, IState> {
     return (
       <div>
         <ButtonContainer>
-          <MuiTabs value={active} onChange={(event, value) => this.set(value)}>
+          <MuiTabs value={active} onChange={(event, value) => this.setTab(value)}>
             {tabs.map(({ label }, index) =>
               <Tab value={index} label={label} key={index} />,
             )}
