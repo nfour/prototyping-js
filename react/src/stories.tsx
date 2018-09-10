@@ -4,7 +4,7 @@ import { text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
 import { Tabs } from './reactState/Tabs';
-import { StatelessComponent } from './statelessComponents/StatelessComponents';
+import { StatelessComponent } from './statelessComponents/StatelessComponent';
 
 /**
  * Just a simple component
