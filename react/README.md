@@ -3,8 +3,8 @@
 - [React prototypes](#react-prototypes)
   - [Getting started](#getting-started)
   - [Prototypes](#prototypes)
-    - [React State](#react-state)
     - [Stateless Components](#stateless-components)
+    - [React State](#react-state)
     - [Mobx State](#mobx-state)
     - [Mobx State Tree](#mobx-state-tree)
     - [Redux State](#redux-state)
@@ -21,15 +21,14 @@ This will start up a storybook at the URL emitted. When you edit the files and s
 
 ## Prototypes
 
-### React State
-
-- [Tabs](./src/reactState/Tabs.tsx)
-
 ### Stateless Components
 
 - [StatelessComponents](./src/statelessComponents/StatelessComponents.tsx)
 - Coming soon: Stateless Components with lifecycle methods
 
+### React State
+
+- [Tabs](./src/reactState/Tabs.tsx)
 
 ### Mobx State
 
