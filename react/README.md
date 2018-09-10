@@ -2,11 +2,11 @@
 
 - [React prototypes](#react-prototypes)
   - [Usage](#usage)
-  - [Content](#content)
-    - [Mobx State](#mobx-state)
-    - [Mobx State Tree](#mobx-state-tree)
+  - [Prototypes](#prototypes)
     - [React State](#react-state)
     - [Stateless Components](#stateless-components)
+    - [Mobx State](#mobx-state)
+    - [Mobx State Tree](#mobx-state-tree)
 
 ## Usage
 
@@ -16,15 +16,7 @@ yarn
 yarn start
 ```
 
-## Content
-
-### Mobx State
-
-Pending
-
-### Mobx State Tree
-
-Pending
+## Prototypes
 
 ### React State
 
@@ -34,3 +26,12 @@ Pending
 
 - [StatelessComponents](./src/statelessComponents/StatelessComponents.tsx)
 - Pending: Stateless Components with lifecycle methods
+
+
+### Mobx State
+
+Pending
+
+### Mobx State Tree
+
+Pending
