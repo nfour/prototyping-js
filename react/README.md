@@ -17,6 +17,8 @@ yarn
 yarn start
 ```
 
+This will start up a storybook at the URL emitted. When you edit the files and save, it will be reflected in the storybook almost instantly!
+
 ## Prototypes
 
 ### React State
