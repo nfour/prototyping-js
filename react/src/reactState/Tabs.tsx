@@ -2,14 +2,22 @@
 import { Tab, Tabs as MuiTabs } from '@material-ui/core';
 import * as React from 'react';
 
-export class Tabs extends React.Component<{
+export interface IState {
+  active?: number;
+}
+
+export interface IProps {
   ButtonContainer: React.ComponentType;
   ContentContainer: React.ComponentType;
-  tabs: Array<{ label: string, Content: React.ComponentType }>
-}> {
-  state = { active: undefined } as { active?: number };
+  tabs: Array<{ label: string, Content: React.ComponentType }>;
+}
 
-  set (active: number) { this.setState({ active }); }
+export class Tabs extends React.Component<IProps, IState> {
+  state = { active: undefined };
+
+  set (active: IState['active']) {
+    this.setState({ active });
+  }
 
   render () {
     const { ButtonContainer, ContentContainer , tabs } = this.props;
