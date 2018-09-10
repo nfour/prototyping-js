@@ -1,14 +1,14 @@
 # React prototypes
 
 - [React prototypes](#react-prototypes)
-  - [Usage](#usage)
+  - [Getting started](#getting-started)
   - [Prototypes](#prototypes)
     - [React State](#react-state)
     - [Stateless Components](#stateless-components)
     - [Mobx State](#mobx-state)
     - [Mobx State Tree](#mobx-state-tree)
 
-## Usage
+## Getting started
 
 ```
 cd react
