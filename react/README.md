@@ -7,6 +7,7 @@
     - [Stateless Components](#stateless-components)
     - [Mobx State](#mobx-state)
     - [Mobx State Tree](#mobx-state-tree)
+    - [Redux State](#redux-state)
 
 ## Getting started
 
@@ -25,13 +26,17 @@ yarn start
 ### Stateless Components
 
 - [StatelessComponents](./src/statelessComponents/StatelessComponents.tsx)
-- Pending: Stateless Components with lifecycle methods
+- Coming soon: Stateless Components with lifecycle methods
 
 
 ### Mobx State
 
-Pending
+Coming soon
 
 ### Mobx State Tree
 
-Pending
+Coming soon
+
+### Redux State
+
+Coming soon
