@@ -34,7 +34,7 @@ When you edit the files and save, their changes are reflected almost instantly.
 
 ### Mobx State
 
-- [MobXTabs](./src/MobXState/stories.tsx)
+- [MobXTabs](./src/mobxState/stories.tsx)
 
 ### Mobx State Tree
 
