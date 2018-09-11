@@ -1,27 +1,8 @@
 
 import { Paper } from '@material-ui/core';
-import { text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
-import { Tabs } from './reactState/Tabs';
-import { StatelessComponent } from './statelessComponents/StatelessComponent';
-
-/**
- * Just a simple component
- */
-storiesOf('SFC', module)
-  .add('StatelessComponent', () =>
-    <StatelessComponent text='woo' />,
-  );
-
-/**
- * A simple component, but with a panel to change stuff, like the text
- */
-storiesOf('SFC (Knobs)', module)
-  .addDecorator(withKnobs)
-  .add('StatelessComponent', () =>
-    <StatelessComponent text={text('Text', 'woo')} />,
-  );
+import { Tabs } from './Tabs';
 
 const ButtonContainer: React.SFC = ({ children }) => <div>{children}</div>;
 const ContentContainer: React.SFC = ({ children }) => <div>{children}</div>;
