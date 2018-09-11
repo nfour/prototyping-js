@@ -25,16 +25,16 @@ When you edit the files and save, their changes are reflected almost instantly.
 
 ### Stateless Components
 
-- [StatelessComponent](./src/statelessComponents/StatelessComponent.tsx)
+- [StatelessComponent](./src/statelessComponents/stories.tsx)
 - Coming soon: Stateless Components with lifecycle methods
 
 ### React State
 
-- [ReactTabs](./src/reactState/ReactTabs.tsx)
+- [ReactTabs](./src/reactState/stories.tsx)
 
 ### Mobx State
 
-- [MobXTabs](./src/MobXState/MobXTabs.tsx)
+- [MobXTabs](./src/MobXState/stories.tsx)
 
 ### Mobx State Tree
 
