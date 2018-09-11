@@ -7,8 +7,6 @@ import { ControlledMobXTabs } from './MobXTabs';
 const tabState = observable({
   active: 0,
   setActiveTab (active: number) {
-    console.log({ active });
-
     tabState.active = active;
   },
 });
