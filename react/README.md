@@ -30,11 +30,11 @@ When you edit the files and save, their changes are reflected almost instantly.
 
 ### React State
 
-- [ReactStateTabs](./src/reactState/ReactStateTabs.tsx)
+- [ReactTabs](./src/reactState/ReactTabs.tsx)
 
 ### Mobx State
 
-- [MobxTabs](./src/MobXState/MobxTabs.tsx)
+- [MobXTabs](./src/MobXState/MobXTabs.tsx)
 
 ### Mobx State Tree
 
