@@ -25,7 +25,7 @@ When you edit the files and save, their changes are reflected almost instantly.
 
 ### Stateless Components
 
-- [StatelessComponents](./src/statelessComponents/StatelessComponents.tsx)
+- [StatelessComponent](./src/statelessComponents/StatelessComponent.tsx)
 - Coming soon: Stateless Components with lifecycle methods
 
 ### React State
