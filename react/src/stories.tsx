@@ -3,7 +3,8 @@ import { Paper } from '@material-ui/core';
 import { text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
-import { Tabs } from './reactState/Tabs';
+import { MobXTabs } from './mobxState/MobXTabs';
+import { ReactStateTabs } from './reactState/ReactStateTabs';
 import { StatelessComponent } from './statelessComponents/StatelessComponent';
 
 /**
@@ -27,13 +28,27 @@ const ButtonContainer: React.SFC = ({ children }) => <div>{children}</div>;
 const ContentContainer: React.SFC = ({ children }) => <div>{children}</div>;
 
 storiesOf('React State', module)
-  .add('Tabs', () =>
-    <Tabs
+  .add('ReactStateTabs', () =>
+    <ReactStateTabs
       ButtonContainer={ButtonContainer}
       ContentContainer={ContentContainer}
       tabs={[
         { label: 'Foo', Content: () => <Paper>Foo</Paper> },
         { label: 'Bar', Content: () => <Paper>Bar</Paper> },
       ]}
+    />,
+  );
+
+storiesOf('MobX State', module)
+  .add('MobXTabs', () =>
+    <MobXTabs
+      ButtonContainer={ButtonContainer}
+      ContentContainer={ContentContainer}
+      tabs={[
+        { label: 'Foo', Content: () => <Paper>Foo</Paper> },
+        { label: 'Bar', Content: () => <Paper>Bar</Paper> },
+      ]}
+      active={0}
+      setActiveTab={(active) => {}}
     />,
   );

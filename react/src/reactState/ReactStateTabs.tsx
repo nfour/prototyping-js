@@ -12,7 +12,7 @@ export interface IProps {
   tabs: Array<{ label: string, Content: React.ComponentType }>;
 }
 
-export class Tabs extends React.Component<IProps, IState> {
+export class ReactStateTabs extends React.Component<IProps, IState> {
   state = { active: undefined };
 
   setTab (active: IState['active']) {
