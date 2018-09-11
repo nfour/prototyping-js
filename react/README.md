@@ -28,11 +28,11 @@ This will start up a storybook at the URL emitted. When you edit the files and s
 
 ### React State
 
-- [Tabs](./src/reactState/Tabs.tsx)
+- [ReactStateTabs](./src/reactState/ReactStateTabs.tsx)
 
 ### Mobx State
 
-Coming soon
+- [MobxTabs](./src/MobXState/MobxTabs.tsx)
 
 ### Mobx State Tree
 
