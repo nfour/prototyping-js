@@ -7,10 +7,13 @@ export interface IState {
 }
 
 export interface IProps {
-  ButtonContainer: React.ComponentType;
-  ContentContainer: React.ComponentType;
+  ButtonContainer?: React.ComponentType;
+  ContentContainer?: React.ComponentType;
   tabs: Array<{ label: string, Content: React.ComponentType }>;
 }
+
+const DefaultButtonContainer: React.SFC = ({ children }) => <div>{children}</div>;
+const DefaultContentContainer: React.SFC = ({ children }) => <div>{children}</div>;
 
 export class ReactStateTabs extends React.Component<IProps, IState> {
   state = { active: undefined };
@@ -20,7 +23,12 @@ export class ReactStateTabs extends React.Component<IProps, IState> {
   }
 
   render () {
-    const { ButtonContainer, ContentContainer , tabs } = this.props;
+    const {
+      ButtonContainer = DefaultButtonContainer,
+      ContentContainer = DefaultContentContainer,
+      tabs,
+    } = this.props;
+
     const { active = 0 } = this.state;
 
     const { Content } = tabs[active];

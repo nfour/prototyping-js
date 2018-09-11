@@ -1,16 +1,29 @@
 
 import { Tab, Tabs as MuiTabs } from '@material-ui/core';
+import { observer } from 'mobx-react';
 import * as React from 'react';
 
 export interface IProps {
-  ButtonContainer: React.ComponentType;
-  ContentContainer: React.ComponentType;
+  ButtonContainer?: React.ComponentType;
+  ContentContainer?: React.ComponentType;
   tabs: Array<{ label: string, Content: React.ComponentType }>;
-  active: number;
-  setActiveTab (index: number): void;
+  tabState: ITabState;
 }
 
-export const MobXTabs: React.SFC<IProps> = ({ ButtonContainer, ContentContainer, tabs, active, setActiveTab }) => {
+export interface ITabState {
+  active: number;
+  setActiveTab (index: number): any;
+}
+
+const DefaultButtonContainer: React.SFC = ({ children }) => <div>{children}</div>;
+const DefaultContentContainer: React.SFC = ({ children }) => <div>{children}</div>;
+
+export const MobXTabs: React.SFC<IProps> = ({
+  ButtonContainer = DefaultButtonContainer,
+  ContentContainer = DefaultContentContainer,
+  tabState: { active, setActiveTab },
+  tabs,
+}) => {
   const { Content } = tabs[active];
 
   return (
@@ -28,3 +41,6 @@ export const MobXTabs: React.SFC<IProps> = ({ ButtonContainer, ContentContainer,
     </div>
   );
 };
+
+/** The `observer` decorator means that whenever it detects a store change, this component shall re-render */
+export const ControlledMobXTabs = observer(MobXTabs);
