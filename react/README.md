@@ -23,6 +23,11 @@ When you edit the files and save, their changes are reflected almost instantly.
 
 ## Prototypes
 
+Things to know:
+- Each folder contains components around a certain idea, such as a library
+- Each folder contains a `stories.tsx`, which is the entry point
+- The stories show different ways to render components
+
 ### Stateless Components
 
 - [StatelessComponent](./src/statelessComponents/stories.tsx)
