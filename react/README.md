@@ -35,15 +35,15 @@ Things to know:
 
 ### React State
 
-- [ReactTabs](./src/reactState/stories.tsx)
+- [Tabs](./src/reactState/stories.tsx)
 
 ### Mobx State
 
-- [MobXTabs](./src/mobxState/stories.tsx)
+- [Tabs](./src/mobxState/stories.tsx)
 
 ### Mobx State Tree
 
-Coming soon
+- [Tabs](./src/mobxStateTree/stories.tsx)
 
 ### Redux State
 
