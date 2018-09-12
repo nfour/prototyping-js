@@ -2,7 +2,7 @@
 import { storiesOf } from '@storybook/react';
 import { types } from 'mobx-state-tree';
 import * as React from 'react';
-import { ControlledTabs } from './Tabs';
+import { ControlledTabs } from '../mobxState/Tabs';
 
 const TabsStore = types
   .model('TabStore', {
