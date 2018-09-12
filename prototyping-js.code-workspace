@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "react"
+		}
+	],
+	"settings": {
+		"typescript.tsdk": "react\\node_modules\\typescript\\lib"
+	}
+}
