@@ -15,7 +15,7 @@ export interface IProps {
 const DefaultButtonContainer: React.SFC = ({ children }) => <div>{children}</div>;
 const DefaultContentContainer: React.SFC = ({ children }) => <div>{children}</div>;
 
-export class ReactTabs extends React.Component<IProps, IState> {
+export class Tabs extends React.Component<IProps, IState> {
   state = { active: undefined };
 
   setTab (active: IState['active']) {
