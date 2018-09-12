@@ -2,7 +2,7 @@
 import { storiesOf } from '@storybook/react';
 import { observable } from 'mobx';
 import * as React from 'react';
-import { ControlledMobXTreeTabs } from './MobXTreeTabs';
+import { ControlledTabs } from './Tabs';
 
 const tabState = observable({
   active: 0,
@@ -11,14 +11,14 @@ const tabState = observable({
   },
 });
 
-const stories = storiesOf('MobX State', module);
+const stories = storiesOf('MobX State Tree', module);
 
 /**
  * This component is controlled by the MobX store, `tabState`.
  * Whenever `setActiveTab` is called, this component will re-render reactively
  */
-stories.add('ControlledMobXTabs', () =>
-  <ControlledMobXTreeTabs
+stories.add('Tabs', () =>
+  <ControlledTabs
     tabs={[
       { label: 'Foo', Content: () => <span>Foo</span> },
       { label: 'Bar', Content: () => <span>Bar</span> },

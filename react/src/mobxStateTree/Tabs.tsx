@@ -18,7 +18,7 @@ export interface ITabState {
 const DefaultButtonContainer: React.SFC = ({ children }) => <div>{children}</div>;
 const DefaultContentContainer: React.SFC = ({ children }) => <div>{children}</div>;
 
-export const MobXTreeTabs: React.SFC<IProps> = ({
+export const Tabs: React.SFC<IProps> = ({
   ButtonContainer = DefaultButtonContainer,
   ContentContainer = DefaultContentContainer,
   tabState: { active, setActiveTab },
@@ -43,4 +43,4 @@ export const MobXTreeTabs: React.SFC<IProps> = ({
 };
 
 /** The `observer` decorator means that whenever it detects a store change, this component shall re-render */
-export const ControlledMobXTreeTabs = observer(MobXTreeTabs);
+export const ControlledTabs = observer(Tabs);
