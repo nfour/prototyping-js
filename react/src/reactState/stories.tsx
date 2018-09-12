@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Tabs } from './Tabs';
 
 storiesOf('React State', module)
-  .add('ReactTabs', () =>
+  .add('Tabs', () =>
     <Tabs
       tabs={[
         { label: 'Foo', Content: () => <span>Foo</span> },
