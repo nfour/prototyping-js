@@ -1,10 +1,18 @@
 
 import { storiesOf } from '@storybook/react';
+import { types } from 'mobx-state-tree';
 import * as React from 'react';
-import { TabStore } from './store';
 import { ControlledTabs } from './Tabs';
 
-const tabState = TabStore.create({ active: 0 });
+const TabsStore = types
+  .model('TabStore', {
+    active: types.number,
+  })
+  .actions((self) => ({
+    setActiveTab (active: number) { self.active = active; },
+  }));
+
+const tabState = TabsStore.create({ active: 0 });
 
 const stories = storiesOf('MobX State Tree', module);
 
