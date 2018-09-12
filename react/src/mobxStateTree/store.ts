@@ -1,7 +1,6 @@
 import { types } from 'mobx-state-tree';
 
-export const TabStore =
-  types
+export const TabStore = types
   .model('TabStore', {
     active: types.number,
   })

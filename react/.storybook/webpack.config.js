@@ -9,7 +9,7 @@ module.exports = (baseConfig, foo, config) => {
         rules: [
           ...config.module.rules,
           {
-            test: /(\.tsx)$/,
+            test: /(\.tsx?)$/,
             loaders: [
               {
                 loader: require.resolve('awesome-typescript-loader'),
