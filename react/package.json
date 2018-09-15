@@ -15,7 +15,10 @@
     "mobx-state-tree": "^3.3.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-functional-lifecycle": "^3.0.0"
+    "react-functional-lifecycle": "^3.0.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
