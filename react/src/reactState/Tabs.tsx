@@ -10,6 +10,7 @@ export interface IProps {
   ButtonContainer?: React.ComponentType;
   ContentContainer?: React.ComponentType;
   tabs: Array<{ label: string, Content: React.ComponentType }>;
+  active?: IState['active'];
 }
 
 const DefaultButtonContainer: React.SFC = ({ children }) => <div>{children}</div>;
@@ -18,7 +19,7 @@ const DefaultContentContainer: React.SFC = ({ children }) => <div>{children}</di
 export class Tabs extends React.Component<IProps, IState> {
   state = { active: undefined };
 
-  setTab (active: IState['active']) {
+  setActiveTab (active: IState['active']) {
     this.setState({ active });
   }
 
@@ -26,17 +27,17 @@ export class Tabs extends React.Component<IProps, IState> {
     const {
       ButtonContainer = DefaultButtonContainer,
       ContentContainer = DefaultContentContainer,
-      tabs,
+      tabs, active: initialActive = 0,
     } = this.props;
 
-    const { active = 0 } = this.state;
+    const { active = initialActive } = this.state;
 
     const { Content } = tabs[active];
 
     return (
       <div>
         <ButtonContainer>
-          <MuiTabs value={active} onChange={(event, value) => this.setTab(value)}>
+          <MuiTabs value={active} onChange={(event, value) => this.setActiveTab(value)}>
             {tabs.map(({ label }, index) =>
               <Tab value={index} label={label} key={index} />,
             )}

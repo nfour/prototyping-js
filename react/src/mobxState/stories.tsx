@@ -11,18 +11,17 @@ const tabState = observable({
   },
 });
 
-const stories = storiesOf('MobX State', module);
-
 /**
  * This component is controlled by the MobX store, `tabState`.
  * Whenever `setActiveTab` is called, this component will re-render reactively
  */
-stories.add('Tabs', () =>
-  <ControlledTabs
-    tabs={[
-      { label: 'Foo', Content: () => <span>Foo</span> },
-      { label: 'Bar', Content: () => <span>Bar</span> },
-    ]}
-    tabState={tabState}
-  />,
-);
+storiesOf('MobX State', module)
+  .add('Tabs', () =>
+    <ControlledTabs
+      tabs={[
+        { label: 'Foo', Content: () => <span>Foo</span> },
+        { label: 'Bar', Content: () => <span>Bar</span> },
+      ]}
+      tabState={tabState}
+    />,
+  );

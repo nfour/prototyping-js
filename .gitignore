@@ -1,5 +1,5 @@
 /npm-*
-/build
+build
 /.nyc_output
 /.coverage
 

@@ -5,7 +5,7 @@ import * as React from 'react';
 import { ControlledTabs } from '../mobxState/Tabs';
 
 const TabsStore = types
-  .model('TabStore', {
+  .model({
     active: types.number,
   })
   .actions((self) => ({
